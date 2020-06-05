@@ -1,6 +1,36 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
 body {
 	background: url(../img/background.png);
 	font-family: 'Exo 2', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+header, main, footer {
+	box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
+footer {
+	padding: 20px;
+	background: black;
+	text-align: center;
 }
 
 .name {
@@ -46,4 +76,37 @@ ul li {
 	background: #23262C;
 	color: white;
 	text-decoration: none;
+}
+
+.commands-list {
+	padding: 20px;
+	width: 960px;
+}
+
+footer a {
+	color: white;
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+footer a:hover {
+	color: white;
+}
+
+.develop {
+	color: white;
+	text-decoration: none;
+}
+
+.image {
+	max-width: 40px;
+	max-height: 40px;
+	margin-top: -8px;
+}
+
+.boosty {
+	max-width: 40px;
+	max-height: 40px;
+	margin-top: -5px;
+	margin-left: -10px;
 }
