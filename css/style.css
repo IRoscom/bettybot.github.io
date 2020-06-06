@@ -70,12 +70,14 @@ ul li {
 	padding: 0 20px;
 	text-decoration: none;
 	line-height: 50px;
+	transition: 0.5s;
 }
 
 .headerButton:hover {
 	background: #23262C;
 	color: white;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .commands-list {
@@ -109,4 +111,62 @@ footer a:hover {
 	max-height: 40px;
 	margin-top: -5px;
 	margin-left: -10px;
+}
+
+.betty {
+	max-height: 25%;
+	max-width: 25%; 
+}
+
+.title-betty {
+	font-family: montserrat,sans-serif;
+	color: white;
+	margin: 1vmin -1.25vmin;
+    font-size: 10vmin;
+    font-weight: 100;
+}
+
+.button {
+	text-align: center;
+    text-shadow: 0 0 10px #0e111a;
+    color: white;
+    margin-right: 1vmin;
+    padding: 1.75vmin 4vmin;
+    border: 3px solid #C02A46;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 2vmin;
+    transition-duration: .1s;
+}
+
+.button:hover {
+    animation: button-hover .3s;
+    text-shadow: inherit;
+    text-decoration: none;
+    background-color: #C02A46;
+    color: white;
+}
+
+div#intro {
+	display: inline-block;
+	color: white;
+    height: 60vh;
+    width: 74vmin;
+    margin: 6.5vh 9.5vw;
+}
+
+.appear-down {
+    opacity: 0;
+    animation: appear-down .25s cubic-bezier(.715,.745,0,.47) .5s 1 normal forwards;
+}
+
+@keyframes appear-down {
+	0% {
+	transform: translateY(-25px);
+    opacity: 0;
+	}
+	100% {
+	transform: translateY(0);
+    opacity: 1;
+	}
 }
